@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: darkslategray;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  gap: 1.5rem;
+  background: white;
+}
+
+.cat-photo {
+  height: 800px;
+  width: auto;
+}
+
+.side-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
