@@ -11,29 +11,48 @@
 
 <body>
   <div class="main-content">
-    <img src="./katt.png" alt="picture of a cat" class="cat-photo">
+    <div class="image-wrapper"><img src="./katt.png" alt="picture of a cat"></div>
     <div class="side-card">
       <div class="main-text">
         <p class="top-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam vel libero veritatis, at
           repellat praesentium, eaque, aspernatur eveniet inventore laborum cumque modi eligendi. Ex nemo corrupti rerum
           neque qui beatae.</p>
       </div>
-      <form action="">
+      <div class="form-wrapper">
+        <form id="main-form" action="">
         <h2>Lets Sign-up!!</h2>
-        <label for="first-name">First name</label>
-        <input type="text" name="first-name" id="first-name">
-        <label for="last-name">Last name</label>
-        <input type="text" name="last-name" id="last-name">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email">
-        <label for="phone-number">Phone Number</label>
-        <input type="number" name="phone-number" id="phone-number">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" name="confirm-password" id="confirm-password">
-        <button type="submit">Create Account</button>
-      </form>
+          <fieldset>
+            <div class="input-container">
+              <label for="first-name">First name</label>
+              <input type="text" name="first-name" id="first-name">
+            </div>
+            <div class="input-container">
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name">
+            </div>
+            <div class="input-container">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="input-container">
+              <label for="phone-number">Phone Number</label>
+              <input type="number" name="phone-number" id="phone-number">
+            </div>
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password">
+            </div>
+            <div class="input-container">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" name="confirm-password" id="confirm-password">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="bottom-content">
+        <button form="main-form" type="submit">Create Account</button>
+        <p>Already have an account? <a href="">Sign In</a></p>
+      </div>
     </div>
   </div>
 </body>
