@@ -6,28 +6,84 @@ body {
   align-items: center;
   background: darkslategray;
 }
+p {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 70%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 80%;
+  padding: 0.5rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.input-container {
+  padding-top: 0.5rem;
+}
 
 .main-content {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  gap: 1.5rem;
-  background: white;
-}
-
-.cat-photo {
-  height: 800px;
+  background: #eeeeee;
+  height: auto;
   width: auto;
 }
 
 .side-card {
   display: flex;
   flex-direction: column;
+  align-self: center;
+  height:100%;
+  gap: 2rem;
 }
 
 .top-text {
   font-size: 1.5rem;
   font-weight: 800;
+  padding-left: 1.5rem;
+}
+
+.form-wrapper {
+  background: white;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.bottom-content {
+  padding-left: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .image-wrapper {
+    width: 50%;
+    height: auto;
+    align-self: center;
+  }
 }
