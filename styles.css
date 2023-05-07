@@ -1,3 +1,7 @@
+:root {
+  font-family: 'Nunito', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,7 +31,7 @@ fieldset {
 label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 input {
@@ -40,8 +44,16 @@ img {
   height: 100%;
 }
 
+button {
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  border: transparent;
+  border-radius: 1rem;
+  background: orange;
+}
+
 .input-container {
-  padding-top: 0.5rem;
+  margin-top: 1.25rem;
 }
 
 .main-content {
