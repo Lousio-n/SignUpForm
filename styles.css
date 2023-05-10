@@ -37,6 +37,8 @@ label {
 input {
   width: 80%;
   padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid gray;
 }
 
 img {
@@ -49,7 +51,13 @@ button {
   font-size: 1.5rem;
   border: transparent;
   border-radius: 1rem;
-  background: orange;
+  background: #1f4e1f;
+  color: #eeeeee;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #1b5f1b;
 }
 
 .input-container {
